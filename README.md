@@ -17,4 +17,4 @@ Openia
 <br>
 Funcionalidades:
 <br>
-API de Cadastro de cliente com preenchimento automático de endereço via cep utilizando outra API chamada viaCep disponível no endereço https://viacep.com.br/
+API de Cadastro de cliente com preenchimento automático de endereço pelo cep utilizando outra API chamada viaCep disponível no endereço https://viacep.com.br/
