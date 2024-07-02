@@ -58,30 +58,25 @@ Using Gradle:
 API Endpoints
 Customer Registration
 
-    POST /customers
+    Get /customers
         Registers a new customer and automatically fills in the address using the viaCep API.
         Example request body:
 
-        json
+      URL: viacep.com.br/ws/01001000/json/
+      Example response:
+      json
 
-{
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "postalCode": "12345678"
-}
-
-Example response:
-
-json
-
-{
-    "id": 1,
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "address": {
-        "street": "Example Street",
-        "city": "Example City",
-        "state": "Example State",
-        "postalCode": "12345678"
+      {
+      "cep": "01001-000",
+      "logradouro": "Praça da Sé",
+      "complemento": "lado ímpar",
+      "unidade": "",
+      "bairro": "Sé",
+      "localidade": "São Paulo",
+      "uf": "SP",
+      "ibge": "3550308",
+      "gia": "1004",
+      "ddd": "11",
+      "siafi": "7107"
     }
-}
+      
